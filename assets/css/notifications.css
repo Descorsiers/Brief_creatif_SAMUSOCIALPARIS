@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media screen and (max-width: 390px) {
+    :root {
+        --font: "Montserrat";
+        --blue-color: #0C469C;
+        --yellow-color: #FFC800;
+    }
+
+    body {
+        margin: 22px;
+        font-family: var(--font);
+        flex-direction: column;
+        display: flex;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    main {
+        flex: 1;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+    }
+
+    .small-title a, h1 {
+        display: flex;
+        align-items: center;
+        color: var(--blue-color);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .notifs-container {
+        flex: 1;
+        justify-content: center;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notifs-container h1 {
+        text-align: center;
+        font-size: 20px;
+        opacity: 30%;
+    }
+
+    .notifs-container img {
+        opacity: 30%;
+        width: 150px;
+        height: auto;
+    }
+}

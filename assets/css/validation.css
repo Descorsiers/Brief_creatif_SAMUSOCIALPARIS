@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media screen and (max-width: 390px) {
+    :root {
+        --font: "Montserrat";
+        --blue-color: #0C469C;
+        --yellow-color: #FFC800;
+    }
+
+    body {
+        margin: 22px;
+        font-family: var(--font);
+    }
+
+    .small-title a, h1 {
+        display: flex;
+        align-items: center;
+        color: var(--blue-color);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .sub-title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-title h2 {
+        color: var(--blue-color);
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 10px;
+        border: 0;
+        border-radius: 15px;
+        background-color: var(--yellow-color);
+    }
+
+    .map {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .map h2 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--blue-color);
+    }
+
+    .report-section {
+        margin-top: 22px;
+        border: 0; 
+        border-radius: 15px; 
+        box-shadow: 1px 1px 22px rgba(12, 70, 156, 0.25);
+        padding: 30px;
+    }
+
+    .report-section h2 {
+        margin: 0;
+        color: var(--blue-color);
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .report-section form p {
+        color: var(--blue-color);
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+   .report-section label {
+        padding: 10px 0;
+        color: var(--blue-color);
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .report-section textarea {
+        font-family: "Montserrat";
+        color: var(--blue-color);
+        opacity: 50%;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--blue-color); 
+        font-size: 13px;
+        outline: none;
+    }
+
+    input:focus {
+        border-bottom: 1px solid var(--blue-color); 
+    }
+
+    .report-section textarea::placeholder {
+        color: var(--blue-color);
+        font-family: "Montserrat";
+
+    }
+
+    .report-info p {
+        color: var(--blue-color);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    .btn-report button {
+        margin: 22px 0;
+        width: 100%;
+        border: 0;
+        border-radius: 15px;
+        background-color: #0C469C;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Montserrat";
+        padding: 10px;
+    }
+}
