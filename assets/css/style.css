@@ -8,15 +8,24 @@
 
 :root {
     --p-color1: #0C469C;
-    --p--color2: #fff;
+    --p-color2: #fff;
+    --background-color: #FCC800;
+    --box-shadow: rgba(12, 70, 156, 0.2) 0px 7px 29px 0px;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--p-color1);
+}
+
+#info {
+    background-color: var(--p-color2);
+    width: 390px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
 }
 
 header {
@@ -26,8 +35,11 @@ header {
 }
 
 nav {
+    z-index: 9999;
+    position: fixed;
+    bottom: 30px;
     background-color: #fff;
-    box-shadow: rgba(12, 70, 156, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--box-shadow);
     position: fixed;
     max-width: 100%;
     border-radius: 20px;
@@ -56,3 +68,219 @@ nav ul li.active::after {
     background-color: var(--p-color1);
     border-radius: 50%;
 }
+
+.back-menu {
+    display: flex;
+    align-items: center;
+}
+
+.back-menu span a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.back-menu span a ion-icon {
+    font-size: 20px;
+}
+
+.back-menu p {
+    font-size: 14px;
+    color: var(--p-color1);
+    font-weight: 700;
+}
+
+.banner {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url(../img/about_us.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0C469C, transparent);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.group-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.group-text p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.group-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.group-cards .card {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.card ul li {
+    margin-top: 10px;
+}
+
+.help-container {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--p-color2);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.help-container p {
+    margin-top: 10px;
+}
+
+.help-container span ion-icon {
+    font-size: 30px;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--p-color1);
+    color: var(--p-color2);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.btn a {
+    color: var(--p-color2);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+.pic-ctn {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden; /* Empêche le débordement des bannières */
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+
+    35% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn>.banner {
+    position: absolute;
+    align-items: flex-end;
+    text-align: left;
+    top: 0;
+    opacity: 0;
+    animation: display 15s infinite; /* Animation fluide */
+}
+
+.pic-ctn>.banner .content {
+    margin: 20px;
+}
+
+.pic-ctn>.banner .content h1 {
+    margin-bottom: 10px;
+}
+
+.pic-ctn>.banner .content .description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pic-ctn>.banner .content .description p {
+    font-size: 12px;
+}
+
+.pic-ctn>.banner .content .description span ion-icon {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.pic-ctn .banner:nth-child(1) {
+    background-image: url(../img/img1_carousel.png);
+    animation-delay: 0s;
+}
+
+.pic-ctn .banner:nth-child(2) {
+    background-image: url(../img/img2_carousel.jpeg);
+    animation-delay: 5s;
+}
+
+.pic-ctn .banner:nth-child(3) {
+    background-image: url(../img/img3_carousel.jpeg);
+    animation-delay: 10s;
+}
+
