@@ -1,0 +1,10 @@
+@media only screen and (max-width: 390px) {
+    body {
+      margin: 22px;
+    }
+    .news{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+  }
