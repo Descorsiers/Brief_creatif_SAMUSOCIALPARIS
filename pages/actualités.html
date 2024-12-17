@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Actualités</title>
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="../assets/css/actualités.css">
     <script defer src="assets/js/script.js"></script>
 </head>
-<body>
-    <header id="header">
 
-    </header>
+<body>
     <main id="main">
         <section class="news">
+            <div id="actu-head">
+                <a href="/"><ion-icon name="chevron-back-outline"></ion-icon>
+                    <h1>Actualités</h1>
+                </a>
+            </div>
+            <h2>Quelques chiffres</h2>
+            <a class="card-container">
+                <div class="card">
+                    <h2>789</h2>
+                    <p>Sans-abris recensés en 2024</p>
+                </div>
+                <div class="card">
+                    <h2>+47k</h2>
+                    <p>Logements disponible fin 2023</p>
+                </div>
+            </a>
+            <div class="card-news" id="marc">
+                <div>
+                    <h2>Marc,</h2>
+                    <p>a pu passer un hiver à l’abri grâce à vos dons.</p>
+                </div>
+            </div>
+            <h2>Articles & témoignages</h2>
+            <a class="card-news" class="banner">
+                <div>
+                    <h2>Opération 2025</h2>
+                    <p>Le Samu Social de Paris agrandit ses équipes et ses ambitions pour 2025 </p>
+                </div>
+            </a>
+            <a class="card-news" id="banner-children"></a>
+            <a class="card-news" class="banner" id="banner-hospital">
+                <div>
+                    <p><b>L’AME, UN DISPOSITIF INDISPENSABLE</b></p>
+                    <p class="publish">Publié le 23/11/2024</p>
+                </div>
+            </a>
             <a class="news__containers">
                 <div class="news__content">
                     <h2 class="testimony__title">
@@ -46,12 +83,8 @@
                     <p>
                         Publié le 01/09/2024 
                     </p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="footer">
-
-    </footer>
+    </section>          
+  </main>
 </body>
+
 </html>
