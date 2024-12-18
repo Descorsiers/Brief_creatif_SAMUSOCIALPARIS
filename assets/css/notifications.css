@@ -8,7 +8,7 @@
     }
 
     body {
-        margin: 22px;
+        padding: 22px;
         font-family: var(--font);
         flex-direction: column;
         display: flex;
