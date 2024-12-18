@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    margin: 22px;
+}
+
+@media screen and (max-width : 390px) {
+
+    .small-title a, h1 {
+        display: flex;
+        align-items: center;
+        color: #0C469C;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .banner {
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 250px;
+        border-radius: 15px;
+        background-image: url(../img/capture_1.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0px 0px 22px -10px #0C469C;
+    }
+    
+    .banner::before {
+        content: "";
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #0C469C, transparent);
+        z-index: 1;
+    }
+    
+    .content {
+        position: relative;
+        z-index: 2;
+        margin-top: 130px;
+    }
+    
+    .content h1 {
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        color: #ffffff;
+    }
+
+    .pic-ctn {
+        position: relative;
+        width: 100%;
+        height: 300px; /* Ajustez la hauteur selon vos besoins */
+        overflow: hidden; /* Empêche le débordement des bannières */
+    }
+
+    .part-article {
+        color: #0C469C;
+        width: 329px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .title-article {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .paragraph-article {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-left: 10px;
+    }
+
+    .donation-box {
+        color: #ffffff;
+        background-color: #FFC800;
+        width: 328px;
+        height: 150px;
+        padding: 8px 8px 20px 8px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0px 0px 22px -10px #FFC800;
+    }
+
+    .title-donation {
+        font-weight: 700;
+        margin: auto 15%;
+    }
+
+    .icon-donation, .title-donation, .subtitle-donation {
+        margin-top: 15px;
+    }
+
+    .btn-report button {
+        margin: 22px 0;
+        width: 100%;
+        border: 0;
+        border-radius: 15px;
+        background-color: #0C469C;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Montserrat";
+        padding: 10px;
+    }
+}
