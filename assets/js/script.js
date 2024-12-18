@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const listItems = document.querySelectorAll("nav ul li");
 
@@ -78,5 +79,4 @@ setTimeout(() => {
         }, 1000);
     }, 5000);
 }, 3000);
-
 

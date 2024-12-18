@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --h1-font-size: 36px;
+    --h2-font-size: 24px;
+    --p-font-size: 16px;
+    --primary: #0C469C;
+    --secondary: #FFC800;
+    --font: 'Montserrat';
+    --padding: 22px;
+    --radius: 15px;
+    --blur: 22px;
+    --spread: -10;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+}
+
+body {
+    background-color: bisque;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+p, li {
+    font-size: var(--p-font-size);
+    color: var(--primary);
+}
+
+main {
+    background-color: #fff;
+    width: 390px;
+    margin-left: auto;  
+    margin-right: auto;
+    padding: var(--padding);
+}
+
+#report-head a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 11px;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+#title {
+    font-size: var(--p-font-size);
+    width: 234px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#report {
+    font-weight: 300;
+    margin-bottom: var(--padding);
+    margin-top: var(--padding);
+    margin-left: 10px;
+}
+
+li {
+    font-weight: 300;
+    margin-left: var(--padding);
+}
+
+.progress-bar-full {
+    width: 321px;
+    height: 8px;
+    background-color: #06D22B;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: var(--radius);
+    border: var(--primary);
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}

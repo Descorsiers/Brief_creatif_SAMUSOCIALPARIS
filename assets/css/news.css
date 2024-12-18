@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @media only screen and (max-width: 480px) {
+    * {
+      font-family: var(--font);
+    }
     :root {
     --h1-font-size: 36px;
     --h2-font-size: 24px;
@@ -12,8 +15,8 @@
     --blur: 22px;
     --spread: -10;
     }
-    body {
-      margin: 22px;
+    .news {
+      padding: var(--padding);
     }
     .news{
         display: flex;
@@ -31,7 +34,7 @@
         box-shadow: 0px 0px 22px -10px #0C469C
     }
     .background__img{
-        height: 100px;
+        height: 150px;
         background-position: center;
         background-size: cover;
         justify-content: end;
@@ -40,50 +43,57 @@
         background-image: url("https://s3-alpha-sig.figma.com/img/438e/d392/b2f26af4789f4088918f9357b15c4607?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ORDezAfpFexipb7xL83Ck5QPuWTaMyHLIs2hrm3lsmZNhLuLqmir~7eKBBmn39JVPtnfwP-mG4wM06S~btWqj1qc04YF0mKTKQgtENszAN4No~kWw3bKKmfRjNPpnNBn8WQb4m0RliJZLm0bfMD~qLOHxfc2nfaL-2uHOVlzbFR4JczMfbJXTFSwjQbEzXEmaiV5ULHf4pqVOvbK81F0SqDHUpgq0kKDyIbofYnm-Ly1hlPP5tGG5mEIR~A751RX8TWdLisUTflk7FRSBOwaAmkree8~MSDfsfZP60JMuyxSM1A6NGZxWz1s~6eXe4DnOg~9ndy8HLPIeULnKIQRCw__");
     }
     #streetSchool{
-        background-image: url("https://s3-alpha-sig.figma.com/img/4b6c/268e/5f89617fedf0464f1856ca0c6c1366a6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O0xlicLqaszZdKufihDgXTnJqprCFpK85DJI2u2zTD88Qe4vwj0J8tDHHEf2zV~VrTwKG-S02qlorQ9yhzTFW2ad8vkIX1Z7aE51AM9gYJQ7Iaav5RhjkFMevX74MSWinW7~g-cCPfWok1F0lNn0fxuu687MeOMbCpj-Vnb~qEB9DpEj9pYcBBift0nyvt8~H3flkw11G~MW6VMrPk8w5KEaWNWhOHeFiBgc7iOYeQ4CMhYE8HuDhbZcHKNUuRKyWuwVASBb-vstn~0UezUQRxgHQmLE2mtEnqVZITyZRrOs7H3MIQjsHX72n6tFEjlzqGoEHYGD4~k8EF6gULtnYQ__");
+        background-image: linear-gradient(to top, #0C469C, transparent), url("https://s3-alpha-sig.figma.com/img/4b6c/268e/5f89617fedf0464f1856ca0c6c1366a6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O0xlicLqaszZdKufihDgXTnJqprCFpK85DJI2u2zTD88Qe4vwj0J8tDHHEf2zV~VrTwKG-S02qlorQ9yhzTFW2ad8vkIX1Z7aE51AM9gYJQ7Iaav5RhjkFMevX74MSWinW7~g-cCPfWok1F0lNn0fxuu687MeOMbCpj-Vnb~qEB9DpEj9pYcBBift0nyvt8~H3flkw11G~MW6VMrPk8w5KEaWNWhOHeFiBgc7iOYeQ4CMhYE8HuDhbZcHKNUuRKyWuwVASBb-vstn~0UezUQRxgHQmLE2mtEnqVZITyZRrOs7H3MIQjsHX72n6tFEjlzqGoEHYGD4~k8EF6gULtnYQ__");
+    }
+    .banner {
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 100%;
+      height: 250px;
+      border-radius: 15px;
+      background-image: url("../img/img1_carousel.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .banner::before {
+      content: "";
+      position: absolute;
+      border-radius: 15px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, #0C469C, transparent);
     }
     .testimony__title{
-        margin: 0;
-        color: #0C469C;
-        font-family: "Montserrat";
+        color: var(--primary);
         font-weight: 700;
-        font-size: 36px;
+        font-size: var(--h1-font-size);
     }
     .testimony{
-        color: #0C469C;
-        margin: 0;
-        font-family: "Montserrat";
+        color: var(--primary);
         font-weight: 400;
         font-size: 13px;
     }
     .testimony__date{
         display: flex;
         justify-content: end;
-        p{
-            margin: 0;
-            color: #0C469C;
-            font-family: "Montserrat";
-            font-weight: 300;
-            font-size: 11px;
-        }
     }
     .news__title{
-        font-family: "Montserrat";
         font-weight: 700;
         font-size: 13px;
-        margin: 0;
     }
     .news__content{
         color: white;
         display: flex;
         gap: 10px;
         flex-direction: column;
-        p{
-            font-family: "Montserrat";
-            font-weight: 400;
-            font-size: 11px;
-            margin: 0;
-        }
     }
     h2 {
     font-size: var(--h2-font-size);
@@ -110,7 +120,6 @@
       gap: var(--padding);
     }
     .card {
-      margin-top: var(--padding);
       background-color: #fff;
       box-shadow: rgba(12, 70, 156, 0.2) 0px 7px 29px 0px;
       border-radius: var(--radius);
@@ -118,32 +127,30 @@
       padding: var(--padding);
     }
     .card p{
-      font-family: var(--font);
       font-weight: 300;
     }
     .card h2{
       font-size: var(--h1-font-size);
-      font-family: var(--font);
     }
     .card-news {
       border-radius: var(--radius);
       height: 216px;
-      padding: var(--padding);
+      z-index: 2;
     }
-    #marc, #banner-hospital {
-      margin-top: var(--padding);
-      margin-bottom: var(--padding);
-      background-size: cover;
+    #marc, #banner-hospital, #banner-operation, #banner-children {
       background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
     }
     #marc {
       background-image: url('../img/Marc.png');
-    }
-    .card-news div {
-      margin-top: 45%;
-    }
-    #marc div {
-      margin-top: 40%;
+      height: 216px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 26px 25px 26px 20px;
+      gap: 15px;
     }
     .card-news h2 {
       color: #fff;
@@ -151,17 +158,34 @@
     }
     .card-news p {
       color: #fff;
-      font-weight: 400;
+    }
+    #banner-operation{
+      background-image: linear-gradient(to top, #0C469C, transparent), url('../img/capture_1.png');
+      display: flex;
+      flex-direction: column;
+      height: 210px;
+      justify-content: end;
+      gap: 18px;
+      padding: 25px 23px;
+      
     }
     #banner-children {
       background-image: url('../img/Children.png');
+      height: 150px;
+      box-shadow: 0px 0px 22px -10px #FFA064
     }
     #banner-hospital {
-      background-image: url('../img/Hospital.png');
+      background-image: linear-gradient(to top, #0C469C, transparent), url('../img/Hospital.png');
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      gap: 15px;
+      padding: 15px;
     }
     .publish {
       font-weight: 100;
-      margin-top: var(--padding);
+      color: #fff;
     }
     .banner h2 {
       margin-bottom: var(--padding);
