@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 :root {
@@ -19,6 +20,11 @@ body {
     justify-content: center;
 }
 
+main{
+    width: 100%;
+    height: 100%;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -26,8 +32,11 @@ header {
 }
 
 nav {
+    z-index: 9998;
+    position: fixed;
+    bottom: 30px;
     background-color: #fff;
-    box-shadow: rgba(12, 70, 156, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--box-shadow);
     position: fixed;
     max-width: 100%;
     border-radius: 20px;
@@ -55,4 +64,5 @@ nav ul li.active::after {
     height: 5px;
     background-color: var(--p-color1);
     border-radius: 50%;
-}
+} 
+
