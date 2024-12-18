@@ -27,21 +27,25 @@ main{
     height: 100%;
 }
 
-header {
+footer {
+    opacity: 0;
+    filter: blur(10px);
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-nav {
+    position: sticky;
     z-index: 9998;
-    position: fixed;
-    bottom: 30px;
+    bottom: 0;
     background-color: #fff;
     box-shadow: var(--box-shadow);
-    position: fixed;
     max-width: 100%;
     border-radius: 20px;
+    transition: opacity 2s ease, filter 2s ease;
+}
+
+footer.active {
+    opacity: 1;
+    filter: blur(0);
 }
 
 nav ul {
