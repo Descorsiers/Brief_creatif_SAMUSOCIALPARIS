@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (index === 2) {
                 const userConfirmed = window.confirm(
-                    "Voulez-vous être redirigé vers un lien externe ?"
+                    "Vous allez être redirigé vers un lien externe. Voulez-vous continuer ?"
                 );
                 if (userConfirmed) {
                     const link = item.querySelector("a").href;
@@ -63,16 +63,20 @@ setTimeout(() => {
 
     setTimeout(() => {
         const preloader = document.querySelector('.preloader');
-
-        // Remplacer 'homepage' par la div contenant la page d'accueil
         const homepage = document.querySelector('.homepage');
+        const footer = document.querySelector('#footer');
 
         preloader.style.transform = 'translateX(-100%)';
         preloader.style.opacity = '0';
 
         setTimeout(() => {
             preloader.style.display = 'none';
-            homepage.classList.add('active'); // même chose ici
+            homepage.classList.add('active');
+            footer.classList.remove('hidden');
+            footer.classList.add('visible');
+            footer.classList.add('active');
         }, 1000);
     }, 5000);
 }, 3000);
+
+
