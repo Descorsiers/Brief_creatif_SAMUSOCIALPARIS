@@ -9,7 +9,9 @@
 
 :root {
     --p-color1: #0C469C;
-    --p--color2: #fff;
+    --p-color2: #fff;
+    --background-color: #FCC800;
+    --box-shadow: rgba(12, 70, 156, 0.2) 0px 7px 29px 0px;
 }
 
 body {
@@ -65,4 +67,3 @@ nav ul li.active::after {
     background-color: var(--p-color1);
     border-radius: 50%;
 } 
-
