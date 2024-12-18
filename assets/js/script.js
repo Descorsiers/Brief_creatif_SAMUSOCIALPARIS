@@ -57,3 +57,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+setTimeout(() => {
+    const spinner = document.querySelector('.spinner');
+    spinner.style.display = 'block';
+
+    setTimeout(() => {
+        const preloader = document.querySelector('.preloader');
+
+        // Remplacer 'homepage' par la div contenant la page d'accueil
+        const homepage = document.querySelector('.homepage');
+
+        preloader.style.transform = 'translateX(-100%)';
+        preloader.style.opacity = '0';
+
+        setTimeout(() => {
+            preloader.style.display = 'none';
+            homepage.classList.add('active'); // même chose ici
+        }, 1000);
+    }, 5000);
+}, 3000);
