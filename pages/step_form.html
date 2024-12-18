@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief Créatif SamuSocialParis</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/step_form.css">
+    <script defer src="../assets/js/script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="pages/actualités.html"><img src="../assets/img/contract.jpg" alt=""></a></li>
+                <li><a href="pages/step_form.html"><img src="../assets/img/crisis_alert.jpg" alt=""></a></li>
+                <li class="btn-volunteer"><a href="https://faire-un-don.samusocial.paris/"><img src="../assets/img/volunteer_activism.jpg" alt=""></a></li>
+                <li><a href="pages/notifications.html"><img src="../assets/img/notifications.jpg" alt=""></a></li>
+                <li><a href="pages/info.html"><img src="../assets/img/info.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="signalement">
+        <div class="container step" id="step-1">
+            <div class="home">
+                <span><a href="../index.html"><ion-icon name="chevron-back-outline"></ion-icon></a></span>
+                <p>Retour</p>
+            </div>
+            <div class="sub-title">
+                <h2>Étape 1/2</h2>
+                <div class="progress-bar1">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Nombre de personnes</h2>
+                <div class="persons">
+                    <button class="person-btn selected">1</button>
+                    <button class="person-btn">2</button>
+                    <button class="person-btn">3</button>
+                    <button class="person-btn">4</button>
+                    <button class="person-btn">5+</button>
+                </div>
+                <div class="toggles">
+                    <div class="input-group">
+                        <label>Enfants ?</label>
+                        <div class="switch_container">
+                            <input type="checkbox" id="check-enfants">
+                            <label for="check-enfants" class="button"></label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Animaux ?</label>
+                        <div class="switch_container">
+                            <input type="checkbox" id="check-animaux">
+                            <label for="check-animaux" class="button"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Identité de la personne signalée</h2>
+                <div class="radio-group">
+                    <label><input type="radio" name="e"> Madame</label>
+                    <label><input type="radio" name="e"> Monsieur</label>
+                </div>
+                <input type="text" placeholder="Nom" />
+                <input type="text" placeholder="Prénom" />
+            </div>
+
+            <div class="card">
+                <h2>Vous êtes</h2>
+                <div class="radio-group">
+                    <label><input type="radio" name="e"> Madame</label>
+                    <label><input type="radio" name="e"> Monsieur</label>
+                </div>
+                <input type="text" placeholder="Nom" />
+                <input type="text" placeholder="Prénom" />
+                <input type="email" placeholder="E-mail" />
+                <input type="tel" placeholder="Téléphone *" />
+            </div>
+
+            <button class="btn next-btn">Valider (passer à l’étape 2)</button>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="container step hidden" id="step-2">
+            <div class="home">
+                <span><a href="#" class="back-btn"><ion-icon name="chevron-back-outline"></ion-icon></a></span>
+                <p>Retour</p>
+            </div>
+            <div class="sub-title">
+                <h2>Étape 2/2</h2>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="map">
+                <h2>Localisation de la personne signalée</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d166933.1276486403!2d2.3873722218201303!3d48.859828671356645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssamu%20social!5e0!3m2!1sfr!2sfr!4v1734353220073!5m2!1sfr!2sfr"
+                    width="326px" height="345px"
+                    style="border: 0; border-radius: 15px; box-shadow: 1px 1px 22px rgba(12, 70, 156, 0.25); width: 100%;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="report-section">
+                <h2>Confirmer mon signalement</h2>
+                <form action="#">
+                    <p>Etes-vous sur de l’emplacement signalé ?*</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="r"> Oui</label>
+                        <label><input type="radio" name="r"> Non</label>
+                    </div>
+
+                    <p>Etes-vous sur de votre signalement ?*</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="r"> Oui</label>
+                        <label><input type="radio" name="r"> Non</label>
+                    </div>
+
+                    <p>Informations importantes à ajouter :</p>
+                    <textarea name="textarea" id="textarea" placeholder="Votre message"></textarea>
+                </form>
+            </div>
+            <div class="report-info">
+                <p>
+                    Dans la mesure où votre signalement peut entrainer l'intervention d'une de nos équipes, nous vous
+                    demandons de vérifier vos informations.
+                </p>
+                <p>
+                    De plus, vos coordonnées peuvent être gardées et utilisées pour vous recontacter ultérieurement.
+                </p>
+            </div>
+            <div class="btn-report">
+                <a href="validation.html">Je valide mon signalement</a>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
