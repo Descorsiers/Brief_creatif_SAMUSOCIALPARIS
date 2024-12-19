@@ -46,6 +46,7 @@ footer {
     nav{
         box-shadow: var(--box-shadow);
         border-radius: 15px;
+        width: 100%;
     }
 }
 
@@ -58,12 +59,13 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    /* gap: 30px; */
+    justify-content: space-evenly;
 }
 
 nav ul li {
     position: relative;
     cursor: pointer;
-    margin: 5px 20px;
 }
 
 nav ul li.active::after {
