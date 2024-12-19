@@ -39,7 +39,7 @@ footer {
     bottom: 0px;
     /* padding: 0 22px; */
     margin-top: 22px;
-    background-color: #fff;
+    background-color: none;
     /* box-shadow: var(--box-shadow); */
     max-width: 100%;
     border-radius: 20px;
