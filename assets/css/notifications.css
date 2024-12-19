@@ -11,8 +11,7 @@
         font-family: var(--font);
         flex-direction: column;
         display: flex;
-        min-height: 100vh;
-        height: 100%;
+        height: 100vh;
     }
 
     footer{
@@ -26,7 +25,7 @@
         flex-direction: column;
         display: flex;
         padding: 22px;
-        height: 100%;
+        height: 100vh;
     }
 
     .small-title {
