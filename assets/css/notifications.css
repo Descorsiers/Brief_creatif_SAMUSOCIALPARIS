@@ -8,12 +8,16 @@
     }
 
     body {
-        padding: 22px;
         font-family: var(--font);
         flex-direction: column;
         display: flex;
         min-height: 100vh;
         height: 100%;
+    }
+
+    footer{
+        opacity: 1;
+        filter: none;
     }
 
     main {

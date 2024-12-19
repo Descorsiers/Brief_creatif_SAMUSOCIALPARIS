@@ -19,8 +19,9 @@
     font-family: var(--font);
 }
 
-body {
-    background-color: bisque;
+footer{
+    opacity: 1;
+    filter: none;
 }
 
 h2 {

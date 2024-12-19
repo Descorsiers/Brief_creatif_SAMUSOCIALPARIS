@@ -18,6 +18,10 @@
     .news {
       padding: var(--padding);
     }
+    footer{
+      opacity: 1;
+      filter: none;
+  }
     .news{
         display: flex;
         flex-direction: column;

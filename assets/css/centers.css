@@ -8,8 +8,11 @@
     }
 
     body {
-        margin: 22px;
         font-family: var(--font);
+    }
+    footer{
+        opacity: 1;
+        filter: none;
     }
 
     .small-title a, h1 {

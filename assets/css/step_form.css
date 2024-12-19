@@ -9,10 +9,9 @@
         padding: 30px 30px 120px 30px;
     }
 
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    footer{
+        opacity: 1;
+        filter: none;
     }
 
     nav {

@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-    margin: 22px;
-}
-
 @media screen and (max-width : 480px) {
 
 
@@ -14,6 +10,10 @@ body{
         font-style: normal;
         font-weight: 700;
         
+    }
+    footer{
+        opacity: 1;
+        filter: none;
     }
 
     .title__container{

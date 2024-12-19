@@ -15,6 +15,10 @@
     .home {
         display: flex;
     }
+    footer{
+        opacity: 1;
+        filter: none;
+    }
 
     .home span a {
         display: flex;
