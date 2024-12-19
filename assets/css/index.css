@@ -17,6 +17,8 @@
     footer{
         opacity: 1;
         filter: none;
+        background-color: #fff;
+        border-radius: 0 !important;
     }
 
     .title__container{
