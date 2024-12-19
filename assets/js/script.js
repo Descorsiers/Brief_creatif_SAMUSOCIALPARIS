@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.addEventListener("click", () => {
         step1.classList.add("left-out");
         step1.classList.remove("active");
+        step1.style.maxHeight = "0px"
 
         step2.classList.add("entering");
         step2.classList.remove("hidden");

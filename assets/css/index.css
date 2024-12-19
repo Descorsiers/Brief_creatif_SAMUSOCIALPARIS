@@ -11,6 +11,9 @@
         font-weight: 700;
         
     }
+    main{
+        margin-bottom: 20px;
+    }
     footer{
         opacity: 1;
         filter: none;

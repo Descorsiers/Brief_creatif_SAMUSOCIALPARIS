@@ -4,14 +4,16 @@
         background-color: var(--p-color2);
         width: 100%;
         height: auto;
-        margin-left: auto;
+        padding: 22px;
+        /* margin-left: auto;
         margin-right: auto;
-        padding: 30px 30px 120px 30px;
+         */
     }
 
     footer{
         opacity: 1;
         filter: none;
+        bottom: 50px !important;
     }
 
     /* nav {
@@ -117,10 +119,10 @@
 
     /* Transition fluide */
     .step {
-        padding: 30px 30px 120px 30px;
-        position: absolute;
-        top: 0;
-        left: 0;
+        /* padding: 30px 30px 120px 30px;
+        position: absolute; */
+        /* top: 0;
+        left: 0; */
         width: 100%;
         transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
         opacity: 1;
