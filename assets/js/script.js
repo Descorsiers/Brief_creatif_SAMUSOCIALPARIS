@@ -1,4 +1,4 @@
-
+const body = document.getElementsByName("body");
 document.addEventListener("DOMContentLoaded", () => {
     const listItems = document.querySelectorAll("nav ul li");
 
@@ -77,6 +77,7 @@ setTimeout(() => {
             footer.classList.remove('hidden');
             footer.classList.add('visible');
             footer.classList.add('active');
+            body.style.background = "white"
         }, 1000);
     }, 5000);
 }, 3000);
