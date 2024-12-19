@@ -34,7 +34,7 @@ footer {
     display: flex;
     justify-content: center;
     position: sticky;
-    z-index: 9998;
+    z-index: 9998; 
     bottom: 0;
     padding: 0 22px;
     margin-top: 22px;
