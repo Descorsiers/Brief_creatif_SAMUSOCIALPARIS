@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     listItems.forEach((item, index) => {
         item.addEventListener("click", (event) => {
-            event.preventDefault();
+            // event.preventDefault();
 
             if (index === 2) {
                 const userConfirmed = window.confirm(
@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            listItems.forEach(li => li.classList.remove("active"));
+            // listItems.forEach(li => li.classList.remove("active"));
 
-            item.classList.add("active");
+            // item.classList.add("active");
         });
     });
 });
