@@ -16,7 +16,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +25,7 @@ body {
 main{
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -33,9 +34,9 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     z-index: 9998; 
-    bottom: 0;
+    bottom: 0px;
     padding: 0 22px;
     margin-top: 22px;
     background-color: #fff;
