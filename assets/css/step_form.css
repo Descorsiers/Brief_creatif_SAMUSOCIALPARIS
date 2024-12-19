@@ -9,7 +9,7 @@
         padding: 30px 30px 120px 30px;
     }
 
-    footer{
+    /* footer{
         opacity: 1;
         filter: none;
     }
@@ -47,7 +47,7 @@
         height: 5px;
         background-color: var(--p-color1);
         border-radius: 50%;
-    }
+    } */
 
     .home {
         display: flex;
