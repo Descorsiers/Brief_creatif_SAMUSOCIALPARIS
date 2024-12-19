@@ -34,7 +34,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     z-index: 9998; 
     bottom: 0px;
     /* padding: 0 22px; */

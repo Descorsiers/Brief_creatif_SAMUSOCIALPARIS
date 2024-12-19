@@ -456,7 +456,7 @@
         margin-top: 30px;
     }
 
-    .btn-report button {
+    .btn-report {
         margin: 22px 0;
         width: 100%;
         border: 0;
@@ -467,5 +467,9 @@
         font-size: 16px;
         font-family: "Montserrat";
         padding: 10px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
