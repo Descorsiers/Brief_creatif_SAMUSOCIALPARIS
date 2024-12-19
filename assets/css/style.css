@@ -37,7 +37,7 @@ footer {
     position: fixed;
     z-index: 9998; 
     bottom: 0px;
-    padding: 0 22px;
+    /* padding: 0 22px; */
     margin-top: 22px;
     background-color: #fff;
     /* box-shadow: var(--box-shadow); */
@@ -48,6 +48,7 @@ footer {
         box-shadow: var(--box-shadow);
         border-radius: 15px;
         width: 100%;
+        margin: 0 22px;
     }
 }
 
