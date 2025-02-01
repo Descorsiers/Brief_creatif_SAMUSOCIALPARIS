@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.homepage{
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+.mobil-off {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.mobil-off h1 {
+    text-align: center;
+}
+
 @media screen and (max-width : 480px) {
+
+    .homepage{
+        display: flex;
+    }
+    
+    footer {
+        display: block;
+    }
+    
+    .mobil-off {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
 
 
     .title-home {
