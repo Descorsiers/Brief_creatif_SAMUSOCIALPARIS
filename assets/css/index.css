@@ -29,9 +29,7 @@ footer {
     }
     
     .mobil-off {
-        display: flex;
-        align-items: center;
-        height: 100vh;
+        display: none;
     }
 
 
