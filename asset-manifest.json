@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio-damien/static/css/main.c06e109c.css",
+    "main.js": "/portfolio-damien/static/js/main.5b261601.js",
+    "static/js/453.3d6b104d.chunk.js": "/portfolio-damien/static/js/453.3d6b104d.chunk.js",
+    "static/media/portfolio-bg.png": "/portfolio-damien/static/media/portfolio-bg.85214b16c9af00abd4f8.png",
+    "static/media/home-bg.png": "/portfolio-damien/static/media/home-bg.8a289a37e19f72a66886.png",
+    "static/media/CV.pdf": "/portfolio-damien/static/media/CV.143e3cacca8871dda7f4.pdf",
+    "static/media/home-bg-mobile.png": "/portfolio-damien/static/media/home-bg-mobile.806b45c819b161194d79.png",
+    "static/media/about-bg.png": "/portfolio-damien/static/media/about-bg.799c024e2765fe35a928.png",
+    "index.html": "/portfolio-damien/index.html",
+    "main.c06e109c.css.map": "/portfolio-damien/static/css/main.c06e109c.css.map",
+    "main.5b261601.js.map": "/portfolio-damien/static/js/main.5b261601.js.map",
+    "453.3d6b104d.chunk.js.map": "/portfolio-damien/static/js/453.3d6b104d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c06e109c.css",
+    "static/js/main.5b261601.js"
+  ]
+}
