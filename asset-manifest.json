@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/damien-portfolio/static/css/main.2db8d07b.css",
-    "main.js": "/damien-portfolio/static/js/main.60cc4dac.js",
-    "static/js/453.3d6b104d.chunk.js": "/damien-portfolio/static/js/453.3d6b104d.chunk.js",
-    "static/media/portfolio-bg.png": "/damien-portfolio/static/media/portfolio-bg.85214b16c9af00abd4f8.png",
-    "static/media/home-bg.png": "/damien-portfolio/static/media/home-bg.8a289a37e19f72a66886.png",
-    "static/media/CV.pdf": "/damien-portfolio/static/media/CV.c5ab9b733ae7efd672a5.pdf",
-    "static/media/home-bg-mobile.png": "/damien-portfolio/static/media/home-bg-mobile.806b45c819b161194d79.png",
-    "static/media/about-bg.png": "/damien-portfolio/static/media/about-bg.799c024e2765fe35a928.png",
-    "index.html": "/damien-portfolio/index.html",
-    "main.2db8d07b.css.map": "/damien-portfolio/static/css/main.2db8d07b.css.map",
-    "main.60cc4dac.js.map": "/damien-portfolio/static/js/main.60cc4dac.js.map",
-    "453.3d6b104d.chunk.js.map": "/damien-portfolio/static/js/453.3d6b104d.chunk.js.map"
+    "main.css": "/my-princess/static/css/main.1ce6f707.css",
+    "main.js": "/my-princess/static/js/main.e85df745.js",
+    "static/js/453.378b455f.chunk.js": "/my-princess/static/js/453.378b455f.chunk.js",
+    "static/media/IMG_1658.JPG": "/my-princess/static/media/IMG_1658.2625b5d620e424c1cc01.JPG",
+    "static/media/IMG_3661.jpeg": "/my-princess/static/media/IMG_3661.e4ef4665fddf4ef3ee60.jpeg",
+    "static/media/IMG_2410.jpeg": "/my-princess/static/media/IMG_2410.a5b34a50f58661a64f54.jpeg",
+    "static/media/me.jpeg": "/my-princess/static/media/me.a8725ce0e821c1c577ee.jpeg",
+    "static/media/IMG_3798.jpeg": "/my-princess/static/media/IMG_3798.e465bab7be16d48b67a9.jpeg",
+    "static/media/love-letter.pdf": "/my-princess/static/media/love-letter.5645255b1d71c8c640a6.pdf",
+    "static/media/IMG_5388.jpeg": "/my-princess/static/media/IMG_5388.253c9bf76739eac188c3.jpeg",
+    "static/media/princess.jpg": "/my-princess/static/media/princess.5550862660c9b200fa29.jpg",
+    "static/media/us.jpg": "/my-princess/static/media/us.4f835f5729e8baf74ecf.jpg",
+    "static/media/hearts-background.png": "/my-princess/static/media/hearts-background.02b8b24ba6d4fce72535.png",
+    "index.html": "/my-princess/index.html",
+    "main.1ce6f707.css.map": "/my-princess/static/css/main.1ce6f707.css.map",
+    "main.e85df745.js.map": "/my-princess/static/js/main.e85df745.js.map",
+    "453.378b455f.chunk.js.map": "/my-princess/static/js/453.378b455f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2db8d07b.css",
-    "static/js/main.60cc4dac.js"
+    "static/css/main.1ce6f707.css",
+    "static/js/main.e85df745.js"
   ]
 }
